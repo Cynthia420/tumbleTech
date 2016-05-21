@@ -1,0 +1,25 @@
+mixin nav-content()
+  ul
+    li
+      a(href='#') About
+      .underline
+    li
+      a(href='#') Youtube
+      .underline
+    li
+      a(href='#') Design
+      .underline
+    li
+      a(href='#') Contact
+  
+.mobile-nav
+  +nav-content()
+
+header
+      
+  nav
+    +nav-content()
+    
+  h1.logo EW
+      
+  .mobile-nav-toggle: span
